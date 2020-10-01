@@ -1,16 +1,68 @@
-header {
-  position: fixed;
-  z-index: 10;
-  height: 50px;
-  width: 100%;
-  background-color: $green;
+.header {
+  flex-wrap: wrap;
+  max-width: 56rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $gray100;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
-  
+  padding: 1rem;
+  .logo {
+    height: 2.5rem;
+  }
+
+  button {
+    align-items: center;
+    display: block;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #ecc94b;
+    border-width: 1px;
+    border-color: #ecc94b;
+    border-radius: 0.25rem;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  svg {
+    width: 0.75rem;
+    height: 0.75rem;
+    fill: #ecc94b;
+  }
   span {
     font-size: $ms-size;
+  }
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.navi {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+    display: block;
+    align-items: center;
+    display: block;
+  }
+}
+
+.link {
+  display: block;
+  margin-top: 1rem;
+  color: $gray900;
+  text-decoration: none;
+  @media (min-width: 768px) {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 1.5rem;
   }
 }
