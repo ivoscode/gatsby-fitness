@@ -6,8 +6,9 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Instagram from "../components/instagram"
-import LeafletMap from "../components/leafletMap"
+
 import Footer from "../components/footer"
+import Contact from "../components/contact"
 
 const IndexPage = ({ data }) => {
   return (
@@ -33,15 +34,9 @@ const IndexPage = ({ data }) => {
 
       <section className="container">
         <Instagram />
+        <Contact />
       </section>
 
-      {typeof window !== "undefined" && (
-        <LeafletMap
-          position={[53.1376164, -1.1958369]} // Your Coordinates
-          zoom={16} // Zoom Level
-          markerText={"PureGym"} // Icon text
-        />
-      )}
       <Footer />
     </Layout>
   )

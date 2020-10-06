@@ -1,18 +1,18 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "18px",
-  baseLineHeight: 1.44,
-  scaleRatio: 2.15,
+  baseFontSize: "16px",
+  baseLineHeight: 1.5,
+  scaleRatio: 2,
 
   googleFonts: [
     {
       name: "Nunito",
-      styles: ["400"],
+      styles: ["400", "600", "700"],
     },
     {
       name: "Montserrat",
-      styles: ["400"],
+      styles: ["400", "600", "700"],
     },
   ],
   headerFontFamily: ["Nunito", "sans-serif"],

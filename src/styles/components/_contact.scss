@@ -1,0 +1,79 @@
+.contact-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-fields {
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  background-color: $gray400;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $gray800;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2.5rem;
+    width: 50%;
+  }
+  label {
+    text-transform: uppercase;
+    display: block;
+    color: $gray700;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  textarea,
+  input {
+    padding: 0.75rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.9rem;
+    border-radius: 0.25rem;
+    border-width: 0;
+    color: $gray700;
+    width: 100%;
+    background-color: white;
+    font-size: 0.875rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    &::placeholder {
+      color: $gray500;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+    }
+  }
+
+  .button-wrap {
+    text-align: center;
+    margin-top: 1.5rem;
+
+    button {
+      background-color: $gray900;
+      color: white;
+      border-width: 0;
+      font-size: 0.87rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+
+      border-radius: 0.25rem;
+      &:hover {
+        outline: 0;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+
+// .name-wrap,
+// .email-wrap {
+//   width: 100%;
+// }
