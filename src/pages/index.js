@@ -9,8 +9,10 @@ import Instagram from "../components/instagram"
 
 import Footer from "../components/footer"
 import Contact from "../components/contact"
+import Services from "../components/services"
 
 const IndexPage = ({ data }) => {
+  console.log(data)
   return (
     <Layout>
       <SEO title="Home" />
@@ -18,6 +20,7 @@ const IndexPage = ({ data }) => {
         <Img fluid={data.hero.childImageSharp.fluid} className="hero-image" />
       </section>
       <section className="container">
+        <Services />
         <div className="about-grid">
           <h2>Hello, I am Marina</h2>
           <p>
@@ -30,9 +33,7 @@ const IndexPage = ({ data }) => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-      </section>
 
-      <section className="container">
         <Instagram />
         <Contact />
       </section>
