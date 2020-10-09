@@ -6,7 +6,7 @@ const Tiless = ({ data }) => {
   const tilesData = [
     {
       title: "One-2-one",
-      image: <Img fluid={data.panda3.childImageSharp.fluid} />,
+
       text:
         "Do you have a programme, but need some exercises technique correction or check why do you have pain during exercising?",
     },
@@ -21,6 +21,7 @@ const Tiless = ({ data }) => {
   console.log(data)
   return (
     <div className="tiles">
+      <Img fluid={data.panda3.childImageSharp.fluid} />
       {tilesData.map(tile => {
         return (
           <div key={tile.title} className="tile">
