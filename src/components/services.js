@@ -1,12 +1,11 @@
 import React from "react"
 import Tiles from "./tiles"
-import Tiless from "./tiles2"
 
 const Services = ({ data }) => {
   return (
     <div className="services">
       <Tiles />
-      <Tiless data={data} />
+
       <div className="button-wraper">
         <a
           target="blank"

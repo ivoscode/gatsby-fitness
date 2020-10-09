@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
         <Img fluid={data.hero.childImageSharp.fluid} className="hero-image" />
       </section>
       <section className="container">
-        <Services data={data} />
+        <Services />
         <div className="about-grid">
           <h2>Hello, I am Marina</h2>
           <p>
@@ -58,13 +58,6 @@ export const pageQuery = graphql`
   query {
     hero: file(relativePath: { eq: "hero.jpg" }) {
       ...fluidImage
-    }
-    panda3: file(relativePath: { eq: "panda3.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
     }
   }
 `

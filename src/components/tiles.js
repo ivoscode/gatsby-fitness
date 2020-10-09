@@ -7,21 +7,21 @@ const Tiles = () => {
     query {
       one2one: file(relativePath: { eq: "one2one.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 200) {
+          fluid(maxWidth: 150) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       nutrition: file(relativePath: { eq: "nutrition.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 200) {
+          fluid(maxWidth: 150) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       shopping: file(relativePath: { eq: "shopping.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 200) {
+          fluid(maxWidth: 150) {
             ...GatsbyImageSharpFluid
           }
         }
