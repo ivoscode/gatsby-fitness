@@ -35,6 +35,7 @@ const IndexPage = ({ data }) => {
         </div>
 
         <Instagram />
+
         <Contact />
       </section>
 
