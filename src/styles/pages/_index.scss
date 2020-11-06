@@ -1,5 +1,9 @@
+body {
+  max-width: 1900px;
+  margin: 0 auto;
+}
 main {
-  background-color: $gray300;
+  background-color: $gray100;
   color: $gray900;
 }
 a {
@@ -24,7 +28,7 @@ h2 {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1900px;
   display: flex;
   flex-direction: column;
   // background-color: $gray200;
@@ -43,34 +47,6 @@ h2 {
     }
     @media screen and (min-width: 1024px) {
       padding: 120px 140px;
-    }
-  }
-
-  .about-grid {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:
-      "h2"
-      "p";
-    @media screen and (min-width: 640px) {
-      grid-template-columns: 1fr 1.5fr;
-      grid-template-rows: repeat(2, auto);
-      grid-template-areas:
-        "h2 ."
-        ". p";
-      margin-top: 80px;
-    }
-    h2 {
-      grid-area: h2;
-      @media screen and (min-width: 640px) {
-        margin-bottom: 0;
-        text-align: end;
-      }
-    }
-    p {
-      grid-area: p;
     }
   }
 }

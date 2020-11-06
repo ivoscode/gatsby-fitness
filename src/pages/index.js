@@ -1,65 +1,28 @@
-import React from "react"
+import React from 'react';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Instagram from '../components/instagram';
+import Footer from '../components/footer';
+import Contact from '../components/contact';
+import Services from '../components/services';
+import About from '../components/about';
+import Hero from '../components/hero';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-
-import Instagram from "../components/instagram"
-
-import Footer from "../components/footer"
-import Contact from "../components/contact"
-import Services from "../components/services"
-
-const IndexPage = ({ data }) => {
-  console.log(data)
+const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home" />
-      <section className="hero">
-        <Img fluid={data.hero.childImageSharp.fluid} className="hero-image" />
-      </section>
-      <section className="container">
+      <SEO title='Home' />
+      <Hero />
+      <section className='container'>
         <Services />
-        <div className="about-grid">
-          <h2>Hello, I am Marina</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-
+        <About />
         <Instagram />
-
         <Contact />
       </section>
 
       <Footer />
     </Layout>
-  )
-}
+  );
+};
 
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1600) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
-
-export const pageQuery = graphql`
-  query {
-    hero: file(relativePath: { eq: "hero.jpg" }) {
-      ...fluidImage
-    }
-  }
-`
-
-export default IndexPage
+export default IndexPage;

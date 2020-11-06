@@ -1,7 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import instagram from "../images/instagram.svg"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 const Instagram = () => {
   const data = useStaticQuery(graphql`
@@ -27,37 +26,40 @@ const Instagram = () => {
         }
       }
     }
-  `)
-  const instaPosts = data.allInstaNode.edges
+  `);
+  const instaPosts = data.allInstaNode.edges;
   return (
-    <div className="insta">
-      <h2>INSTAGRAM</h2>{" "}
+    <div className='insta'>
+      <h2>INSTAGRAM</h2>
       <a
-        href="https://www.instagram.com/marinamuraskins/?fbclid=IwAR2HizbYvDi5kbVSZzxaTtPcrirRyTyALh8uCiWMXQyJE2EEsXja1OLyi4o"
-        target="blank"
+        href='https://www.instagram.com/marinamuraskins/?fbclid=IwAR2HizbYvDi5kbVSZzxaTtPcrirRyTyALh8uCiWMXQyJE2EEsXja1OLyi4o'
+        target='blank'
       >
-        <img className="instalogo" src={instagram} alt="instagram" />
+        <p>@marinamuraskins</p>
       </a>
-      <h1>@marinamuraskins</h1>
-      <ul className="insta-posts">
+
+      <ul className='insta-posts'>
         {instaPosts.map(({ node }) => {
           return (
-            <li key={node.id} className="insta-post">
-              <Img fixed={node.localFile.childImageSharp.fixed} />
-              <div className="overlay">
+            <li key={node.id} className='insta-post'>
+              <Img
+                className='tile-img'
+                fixed={node.localFile.childImageSharp.fixed}
+              />
+              <div className='overlay'>
                 <img
-                  className="icon"
-                  src={require("../images/like.png")}
-                  alt="like icon"
+                  className='icon'
+                  src={require('../images/like.png')}
+                  alt='like icon'
                 />
-                <p className="text">{node.likes}</p>
+                <p className='text'>{node.likes}</p>
               </div>
             </li>
-          )
+          );
         })}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Instagram
+export default Instagram;
