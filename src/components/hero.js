@@ -8,7 +8,7 @@ const Hero = () => {
     query {
       hero: file(relativePath: { eq: "hero.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1500) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -16,9 +16,12 @@ const Hero = () => {
     }
   `);
   return (
-    <div>
-      <div className='hero'>
-        <Img fluid={data.hero.childImageSharp.fluid} className='hero-image' />
+    <div className='hero'>
+      <div className='hero-img-div'>
+        <Img fluid={data.hero.childImageSharp.fluid} className='hero-img' />
+      </div>
+      <div className='hero-text-div'>
+        <h1>BE EFFECTIVE IN YOUR BODY</h1>
       </div>
     </div>
   );

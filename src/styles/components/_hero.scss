@@ -1,0 +1,21 @@
+.hero {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .hero {
+    display: flex;
+    height: 75vh;
+  }
+  .hero-img-div {
+    width: 35%;
+  }
+  .hero-text-div {
+    width: 65%;
+  }
+  .hero-img {
+    height: 100%;
+  }
+}

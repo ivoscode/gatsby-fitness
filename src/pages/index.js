@@ -3,7 +3,6 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Instagram from '../components/instagram';
 import Footer from '../components/footer';
-import Contact from '../components/contact';
 import Services from '../components/services';
 import About from '../components/about';
 import Hero from '../components/hero';
@@ -13,12 +12,12 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title='Home' />
-      <Hero />
+
       <section className='container'>
+        <Hero />
         <Services />
         <About />
         <Instagram />
-        <Contact />
         <ContactForm />
       </section>
 

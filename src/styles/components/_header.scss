@@ -38,7 +38,7 @@
     fill: #ecc94b;
   }
   span {
-    font-size: $ms-size;
+    font-size: $text-sm;
   }
 }
 .show {
@@ -61,7 +61,7 @@
 .link {
   display: block;
   margin-top: 1rem;
-  color: $gray900;
+  color: $gray-900;
   text-decoration: none;
   @media (min-width: 768px) {
     display: inline-block;

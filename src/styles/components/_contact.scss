@@ -6,14 +6,14 @@
 .contact-fields {
   border-radius: 0.5rem;
   padding: 1.25rem;
-  background-color: $gray200;
+  background-color: $gray-200;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
   h1 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: $gray800;
+    color: $gray-800;
   }
 
   @media (min-width: 1024px) {
@@ -23,7 +23,7 @@
   label {
     text-transform: uppercase;
     display: block;
-    color: $gray700;
+    color: $gray-700;
     font-size: 0.75rem;
     font-weight: 700;
   }
@@ -34,14 +34,14 @@
     margin-bottom: 0.9rem;
     border-radius: 0.25rem;
     border-width: 0;
-    color: $gray700;
+    color: $gray-700;
     width: 100%;
     background-color: white;
     font-size: 0.875rem;
     transition: all 0.4s ease 0s;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     &::placeholder {
-      color: $gray500;
+      color: $gray-500;
     }
 
     &:focus {
@@ -55,7 +55,7 @@
     margin-top: 1.5rem;
 
     button {
-      background-color: $gray900;
+      background-color: $gray-900;
       color: white;
       border-width: 0;
       font-size: 0.87rem;
@@ -74,6 +74,9 @@
   }
 }
 
+.text-danger {
+  color: $pink-500;
+}
 // .name-wrap,
 // .email-wrap {
 //   width: 100%;
