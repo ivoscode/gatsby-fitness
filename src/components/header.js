@@ -16,7 +16,7 @@ const Header = () => {
     }
   `);
   const [isExpanded, toggleExpansion] = useState(false);
-  console.log(data.marinapng.childImageSharp.fluid.src);
+
   return (
     <header className='header'>
       <Link to='/'>
@@ -31,16 +31,16 @@ const Header = () => {
       <nav className={`${isExpanded ? `show` : `hide`} navi`}>
         {[
           {
-            route: `/about`,
-            title: `About`,
+            route: `/#train`,
+            title: `Train Online`,
           },
           {
-            route: `/contact`,
+            route: `/#contact`,
             title: `Contact`,
           },
           {
-            route: `/train`,
-            title: `Train Online`,
+            route: `/#about`,
+            title: `About`,
           },
         ].map((link) => (
           <Link className='link' key={link.title} to={link.route}>
