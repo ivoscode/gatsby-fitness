@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 import Services from '../components/services';
 import About from '../components/about';
 import Hero from '../components/hero';
-import { ContactForm } from '../components/contactForm';
+import Contacts from '../components/contacts';
 
 const IndexPage = () => {
   return (
@@ -18,7 +18,7 @@ const IndexPage = () => {
         <Services />
         <About />
         <Instagram />
-        <ContactForm />
+        <Contacts />
       </section>
 
       <Footer />

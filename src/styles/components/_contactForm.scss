@@ -4,6 +4,7 @@
 }
 
 .contact-fields {
+  width: 90%;
   border-radius: 0.5rem;
   padding: 1.25rem;
   background-color: $gray-200;
@@ -18,7 +19,7 @@
 
   @media (min-width: 1024px) {
     padding: 2.5rem;
-    width: 50%;
+    //width: 90%;
   }
   label {
     text-transform: uppercase;
@@ -77,7 +78,3 @@
 .text-danger {
   color: $pink-500;
 }
-// .name-wrap,
-// .email-wrap {
-//   width: 100%;
-// }

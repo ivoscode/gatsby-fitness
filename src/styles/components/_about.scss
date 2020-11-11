@@ -4,8 +4,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   grid-template-areas:
-    'h2'
-    'section';
+    'title'
+    'text';
   @media screen and (min-width: 640px) {
     grid-template-columns: 1fr 1.8fr;
     grid-template-rows: repeat(2, auto);

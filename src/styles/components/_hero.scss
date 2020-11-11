@@ -1,15 +1,36 @@
+.hero-img-div {
+  display: none;
+}
 .hero {
   h1 {
-    font-size: 4em;
+    font-size: 8vw;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    font-weight: bold;
+    line-height: 6rem;
+    color: #c5a54a;
+  }
+}
+.hero-text-div {
+  position: relative;
+  img {
+    height: 2rem;
+    margin-left: 2rem;
   }
 }
 
 @media screen and (min-width: 630px) {
   .hero {
     display: flex;
-    height: 75vh;
+    height: 70vh;
+    margin-bottom: 10vh;
+
+    h1 {
+      font-size: 5vw;
+    }
   }
   .hero-img-div {
+    display: block;
     width: 35%;
   }
   .hero-text-div {
@@ -17,5 +38,10 @@
   }
   .hero-img {
     height: 100%;
+  }
+  .contact-icons {
+    position: absolute;
+    bottom: 0;
+    right: 8rem;
   }
 }
