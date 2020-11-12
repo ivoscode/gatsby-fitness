@@ -7,6 +7,7 @@ import Services from '../components/services';
 import About from '../components/about';
 import Hero from '../components/hero';
 import Contacts from '../components/contacts';
+import TwoOptions from '../components/twoOptions';
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
 
       <section className='container'>
         <Hero />
+        <TwoOptions />
         <Services />
         <About />
         <Instagram />

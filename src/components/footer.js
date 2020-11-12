@@ -4,9 +4,17 @@ const Footer = () => {
   return (
     <footer>
       <p>
-        Built by
-        <a href='https://' target='_blank' rel='noopener noreferrer'>
-          ivo legzdins
+        Icons made by{' '}
+        <a
+          href='https://www.flaticon.com/authors/pixel-perfect'
+          title='Pixel perfect'
+        >
+          Pixel perfect
+        </a>{' '}
+        from{' '}
+        <a href='https://www.flaticon.com/' title='Flaticon'>
+          {' '}
+          www.flaticon.com
         </a>
       </p>
     </footer>

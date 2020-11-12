@@ -22,8 +22,8 @@
 @media screen and (min-width: 630px) {
   .hero {
     display: flex;
-    height: 70vh;
-    margin-bottom: 10vh;
+    height: 25rem;
+    margin-bottom: 5rem;
 
     h1 {
       font-size: 5vw;
@@ -38,6 +38,7 @@
   }
   .hero-img {
     height: 100%;
+    //width: 100%;
   }
   .contact-icons {
     position: absolute;

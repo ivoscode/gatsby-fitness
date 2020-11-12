@@ -25,16 +25,7 @@ h2 {
   @media screen and (min-width: 1024px) {
     width: 80%;
   }
-
-  // .description {
-  //   text-align: center;
-  //   font-size: $text-lg;
-  //   padding: 80px 20px;
-  //   @media screen and (min-width: 768px) {
-  //     padding: 100px 120px;
-  //   }
-  //   @media screen and (min-width: 1024px) {
-  //     padding: 120px 140px;
-  //   }
-  // }
+}
+footer > p {
+  font-size: 0.4rem;
 }
