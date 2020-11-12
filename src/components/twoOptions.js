@@ -18,7 +18,7 @@ const TwoOptions = () => {
       </div>
       <div className='option-two'>
         <img src={two} alt='two' />
-        <p>Training online in the private Instagram and Facebook groups.</p>
+        <p>Live Zoom session. Three spaces.</p>
       </div>
 
       <div className='button-wrap'>
