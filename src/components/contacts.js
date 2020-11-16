@@ -3,6 +3,7 @@ import ContactForm from './contactForm';
 import mail from '../images/mail.svg';
 import call from '../images/call.svg';
 import facebook from '../images/facebook.svg';
+import instagram from '../images/instagram.svg';
 
 const Contacts = () => {
   return (
@@ -22,6 +23,12 @@ const Contacts = () => {
           <a href='https://www.facebook.com/MarinaMuraskins/?ref=page_internal'>
             <img alt='messenger' src={facebook} />
             <span>Fixtofit</span>
+          </a>
+        </div>
+        <div>
+          <a href='https://www.instagram.com/marinamuraskins/?fbclid=IwAR2HizbYvDi5kbVSZzxaTtPcrirRyTyALh8uCiWMXQyJE2EEsXja1OLyi4o'>
+            <img alt='instagram' src={instagram} />
+            <span>Follow me on Instagram</span>{' '}
           </a>
         </div>
       </div>

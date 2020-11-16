@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Instagram from '../components/instagram';
+
 import Footer from '../components/footer';
 import Services from '../components/services';
 import About from '../components/about';
@@ -19,7 +19,7 @@ const IndexPage = () => {
         <TwoOptions />
         <Services />
         <About />
-        <Instagram />
+
         <Contacts />
       </section>
 

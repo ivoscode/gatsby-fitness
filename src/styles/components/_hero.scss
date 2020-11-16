@@ -1,13 +1,18 @@
 .hero-img-div {
   display: none;
 }
+.contact-icons {
+  display: none;
+}
+
 .hero {
   h1 {
-    font-size: 8vw;
+    font-size: 10vw;
     margin-top: 5rem;
     margin-left: 4rem;
     font-weight: bold;
-    line-height: 6rem;
+    line-height: 5rem;
+    margin-bottom: 7rem;
     color: #c5a54a;
   }
 }
@@ -41,6 +46,7 @@
     //width: 100%;
   }
   .contact-icons {
+    display: none;
     position: absolute;
     bottom: 0;
     right: 8rem;
