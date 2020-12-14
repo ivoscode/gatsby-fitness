@@ -22,25 +22,46 @@ const Header = () => {
       <Link to='/'>
         <Img fluid={data.marinapng.childImageSharp.fluid} className='logo' />
       </Link>
-      <button onClick={() => toggleExpansion(!isExpanded)}>
-        <svg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
-          <title>Menu</title>
-          <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
-        </svg>
-      </button>
+      <div className='two-buttons'>
+        <a
+          href='https://www.facebook.com/MarinaMuraskins/?ref=page_internal'
+          target='blank'
+          className='app-button'
+        >
+          BOOK AN APPOINTMENT
+        </a>
+
+        {/*Hamburger button*/}
+        <button onClick={() => toggleExpansion(!isExpanded)}>
+          <svg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
+            <title>Menu</title>
+            <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
+          </svg>
+        </button>
+      </div>
+      {/*Nav dropdown menu*/}
       <nav className={`${isExpanded ? `show` : `hide`} navi`}>
         {[
           {
             route: `/#train`,
-            title: `Train Online`,
+            title: `About Me`,
           },
+          {
+            route: `/#train`,
+            title: `One-2-One Coaching`,
+          },
+          {
+            route: `/#train`,
+            title: `Online Coaching`,
+          },
+          {
+            route: `/#train`,
+            title: `Nutrition`,
+          },
+
           {
             route: `/#contact`,
             title: `Contact`,
-          },
-          {
-            route: `/#about`,
-            title: `About`,
           },
         ].map((link) => (
           <Link className='link' key={link.title} to={link.route}>

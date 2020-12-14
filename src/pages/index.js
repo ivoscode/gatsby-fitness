@@ -3,9 +3,8 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import Footer from '../components/footer';
-import Services from '../components/services';
+
 import About from '../components/about';
-import Hero from '../components/hero';
 import Contacts from '../components/contacts';
 import TwoOptions from '../components/twoOptions';
 
@@ -15,10 +14,8 @@ const IndexPage = () => {
       <SEO title='Home' />
 
       <section className='container'>
-        <Hero />
-        <TwoOptions />
-        <Services />
         <About />
+        <TwoOptions />
 
         <Contacts />
       </section>

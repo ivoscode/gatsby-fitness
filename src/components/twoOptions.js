@@ -1,21 +1,12 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
-// import one from '../images/one.svg';
-// import two from '../images/two.svg';
+//import { Link } from 'gatsby';
 
 const TwoOptions = () => {
   return (
     <div id='train' className='two-options'>
       <div className='options-title'>
-        <h1>Train Online from Home</h1>
+        <h1>Train Online or from Home</h1>
         <h3>Two options available</h3>
-      </div>
-
-      <div className='button-wrap'>
-        <Link to='/#contact' target='blank' className='options-button'>
-          CONTACT FOR AVAILABILITY
-        </Link>
       </div>
     </div>
   );

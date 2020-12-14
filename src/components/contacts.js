@@ -31,6 +31,15 @@ const Contacts = () => {
             <span>Follow me on Instagram</span>{' '}
           </a>
         </div>
+        <div>
+          <a
+            href='https://www.facebook.com/MarinaMuraskins/?ref=page_internal'
+            target='blank'
+            className='app-button'
+          >
+            BOOK AN APPOINTMENT
+          </a>
+        </div>
       </div>
     </div>
   );
