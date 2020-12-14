@@ -4,9 +4,12 @@ import React from 'react';
 const TwoOptions = () => {
   return (
     <div id='train' className='two-options'>
-      <div className='options-title'>
-        <h1>Train Online or from Home</h1>
-        <h3>Two options available</h3>
+      <div className='option'>
+        <h1>Online training</h1>
+        <h2>Zoom groups and Individual</h2>
+      </div>
+      <div className='option'>
+        <h1>Offline One-2-One</h1>
       </div>
     </div>
   );

@@ -18,32 +18,34 @@ const Header = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className='header'>
-      <Link to='/'>
-        <Img fluid={data.marinapng.childImageSharp.fluid} className='logo' />
-      </Link>
-      <div className='two-buttons'>
-        <a
-          href='https://www.facebook.com/MarinaMuraskins/?ref=page_internal'
-          target='blank'
-          className='app-button'
-        >
-          BOOK AN APPOINTMENT
-        </a>
+    <>
+      <header className='header'>
+        <Link to='/'>
+          <Img fluid={data.marinapng.childImageSharp.fluid} className='logo' />
+        </Link>
+        <div className='two-buttons'>
+          <a
+            href='https://www.facebook.com/MarinaMuraskins/?ref=page_internal'
+            target='blank'
+            className='app-button btn-1'
+          >
+            BOOK AN APPOINTMENT
+          </a>
 
-        {/*Hamburger button*/}
-        <button onClick={() => toggleExpansion(!isExpanded)}>
-          <svg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
-            <title>Menu</title>
-            <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
-          </svg>
-        </button>
-      </div>
+          {/*Hamburger button*/}
+          <button onClick={() => toggleExpansion(!isExpanded)}>
+            <svg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
+              <title>Menu</title>
+              <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
+            </svg>
+          </button>
+        </div>
+      </header>
       {/*Nav dropdown menu*/}
       <nav className={`${isExpanded ? `show` : `hide`} navi`}>
         {[
           {
-            route: `/#train`,
+            route: `/#about`,
             title: `About Me`,
           },
           {
@@ -69,7 +71,16 @@ const Header = () => {
           </Link>
         ))}
       </nav>
-    </header>
+      <div className=' btn-2'>
+        <a
+          href='https://www.facebook.com/MarinaMuraskins/?ref=page_internal'
+          target='blank'
+          className='app-button '
+        >
+          BOOK AN APPOINTMENT
+        </a>
+      </div>
+    </>
   );
 };
 

@@ -7,6 +7,8 @@ import Footer from '../components/footer';
 import About from '../components/about';
 import Contacts from '../components/contacts';
 import TwoOptions from '../components/twoOptions';
+import Diplomas from '../components/diplomas';
+import Nutrition from '../components/nutrition';
 
 const IndexPage = () => {
   return (
@@ -15,7 +17,9 @@ const IndexPage = () => {
 
       <section className='container'>
         <About />
+        <Diplomas />
         <TwoOptions />
+        <Nutrition />
 
         <Contacts />
       </section>
